@@ -10,7 +10,6 @@ authors = ["theonlyhennygod"]
 license = "Apache-2.0"
 description = "Zero overhead. Zero compromise. 100% Rust. The fastest, smallest AI assistant."
 repository = "https://github.com/zeroclaw-labs/zeroclaw"
-readme = "README.md"
 keywords = ["ai", "agent", "cli", "assistant", "chatbot"]
 categories = ["command-line-utilities", "api-bindings"]
 
@@ -19,7 +18,7 @@ categories = ["command-line-utilities", "api-bindings"]
 clap = { version = "4.5", features = ["derive"] }
 
 # Async runtime - feature-optimized for size
-tokio = { version = "1.42", default-features = false, features = ["rt-multi-thread", "macros", "time", "net", "io-util", "sync", "process", "io-std", "fs", "signal"] }
+tokio = { version = "1.42", default-features = false, features = ["rt-multi-thread", "macros", "time", "net", "io-util", "sync", "process", "io-std", "fs", "signal"], public=true }
 tokio-util = { version = "0.7", default-features = false }
 
 # HTTP client - minimal features
@@ -86,7 +85,7 @@ prost = { version = "0.14", default-features = false }
 # Memory / persistence
 rusqlite = { version = "0.37", features = ["bundled"] }
 postgres = { version = "0.19", features = ["with-chrono-0_4"] }
-chrono = { version = "0.4", default-features = false, features = ["clock", "std", "serde"] }
+chrono = { version = "0.4", default-features = false, features = ["clock", "std", "serde"], public=true }
 chrono-tz = "0.10"
 cron = "0.15"
 

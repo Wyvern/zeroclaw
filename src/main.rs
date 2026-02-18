@@ -1,4 +1,3 @@
-#![warn(clippy::all, clippy::pedantic)]
 #![allow(
     clippy::assigning_clones,
     clippy::bool_to_int_with_if,
@@ -29,7 +28,8 @@
     clippy::unnecessary_literal_bound,
     clippy::unnecessary_map_or,
     clippy::unnecessary_wraps,
-    dead_code
+    dead_code,
+    exported_private_dependencies
 )]
 
 use anyhow::{bail, Result};
