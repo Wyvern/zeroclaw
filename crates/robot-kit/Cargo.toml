@@ -6,7 +6,6 @@ authors = ["theonlyhennygod"]
 license = "MIT"
 description = "Robot control toolkit for ZeroClaw - drive, vision, speech, sensors, safety"
 repository = "https://github.com/zeroclaw-labs/zeroclaw"
-readme = "README.md"
 keywords = ["robotics", "raspberry-pi", "ai", "agent", "ros2"]
 categories = ["science::robotics", "embedded", "hardware-support"]
 
