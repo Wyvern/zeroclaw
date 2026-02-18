@@ -188,7 +188,7 @@ pub fn run_wizard() -> Result<Config> {
             );
             println!();
             // Signal to main.rs to call start_channels after wizard returns
-            std::env::set_var("ZEROCLAW_AUTOSTART_CHANNELS", "1");
+            unsafe{std::env::set_var("ZEROCLAW_AUTOSTART_CHANNELS", "1");}
         }
     }
 
@@ -247,7 +247,7 @@ pub fn run_channels_repair_wizard() -> Result<Config> {
             );
             println!();
             // Signal to main.rs to call start_channels after wizard returns
-            std::env::set_var("ZEROCLAW_AUTOSTART_CHANNELS", "1");
+            unsafe{std::env::set_var("ZEROCLAW_AUTOSTART_CHANNELS", "1");}
         }
     }
 
